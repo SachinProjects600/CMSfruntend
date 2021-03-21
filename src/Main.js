@@ -41,8 +41,8 @@ const Main = (props) => {
         }
         fetchUserDetails(reqObject, API_PATH)
         .then(res => {
-            setAllTeachers(res.results[0])
-            setAllStudents(res.results[1])
+            setAllTeachers(res?.results?.[0])
+            setAllStudents(res?.results?.[1])
         })
     }
     return <AppContext.Provider value={value}>{props.children} </AppContext.Provider>

@@ -20,7 +20,7 @@ const Login = () =>  {
   const { entity, setEntity} = useContext(AppContext)
   const [open, setOpen] = React.useState(false);
   const [isloginFailed, setisLoginFailed] = useState(false)
-  const  { API_PATH } = useState(AppContext)
+  const  { API_PATH } = useContext(AppContext)
  // const [selectedValue, setSelectedValue] = React.useState(emails[1]);
   const [values, setValues] = React.useState({
     password: '',
