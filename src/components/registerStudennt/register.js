@@ -62,7 +62,7 @@ const Register = () => {
   function getStepContent(stepIndex) {
     switch (stepIndex) {
       case 0:
-        return allTeachers.length > 0 && <PersonalDetails setStudentPersonalDetails={setStudentPersonalDetails} BirthDate={BirthDate} setBirthDate={setBirthDate} />
+        return allTeachers?.length > 0 && <PersonalDetails setStudentPersonalDetails={setStudentPersonalDetails} BirthDate={BirthDate} setBirthDate={setBirthDate} />
       case 1:
         return  <EducationalDetails setStudentEduDetails={setStudentEduDetails} />
       case 2:
